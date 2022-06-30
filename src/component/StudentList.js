@@ -36,7 +36,12 @@ function StudentList() {
     const studentList = students.map(a => <StudentCard key={a.id} student = {a}/>
         )
   return (
-    <div className='cardList'>{studentList}</div>
+    <>
+        <h1>Student List</h1>
+        <div className='cardList'>
+            {studentList}
+        </div>
+    </>
   )
 }
 
