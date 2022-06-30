@@ -7,6 +7,17 @@ import {
 	Link
 } from 'react-router-dom';
 
+class App extends Component {
+  render() {
+    return (
+    <Router>
+      <div className="App">
+      </div>
+    </Router>
+  );
+  }
+  }
+  
 function App() {
   return (
     <div className="App">
@@ -24,6 +35,20 @@ function App() {
           Learn React
         </a>
       </header>
+      <div className="App">
+    <ul>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/about">About Us</Link>
+      </li>
+      <li>
+        <Link to="/contact">Contact Us</Link>
+      </li>
+    </ul>
+</div>
+
     </div>
   );
 }
