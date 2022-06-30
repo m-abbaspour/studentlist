@@ -11,10 +11,11 @@ import Col from 'react-bootstrap/Col'
 function StudentCard() {
   return (
     <div className='size'>    
+    
     <Row xs={1} md={2} className="g-4">
       {Array.from({ length: 4 }).map((_, idx) => (
         <Col>
-          <Card>
+          <Card border="primary" style={{ width: '18rem' }}>
             <Card.Img variant="top" src="./s1.png" />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
